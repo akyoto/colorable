@@ -1,3 +1,5 @@
-module github.com/mattn/go-colorable
+module github.com/akyoto/colorable
 
-require github.com/mattn/go-isatty v0.0.8
+go 1.13
+
+require github.com/akyoto/tty v0.1.0

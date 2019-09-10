@@ -1,48 +1,37 @@
-# go-colorable
+# colorable
 
-[![Godoc Reference](https://godoc.org/github.com/mattn/go-colorable?status.svg)](http://godoc.org/github.com/mattn/go-colorable)
-[![Build Status](https://travis-ci.org/mattn/go-colorable.svg?branch=master)](https://travis-ci.org/mattn/go-colorable)
-[![Coverage Status](https://coveralls.io/repos/github/mattn/go-colorable/badge.svg?branch=master)](https://coveralls.io/github/mattn/go-colorable?branch=master)
-[![Go Report Card](https://goreportcard.com/badge/mattn/go-colorable)](https://goreportcard.com/report/mattn/go-colorable)
+[![Godoc][godoc-image]][godoc-url]
+[![Report][report-image]][report-url]
+[![Tests][tests-image]][tests-url]
+[![Coverage][coverage-image]][coverage-url]
+[![Sponsor][sponsor-image]][sponsor-url]
 
-Colorable writer for windows.
+Colorable writer.
 
-For example, most of logger packages doesn't show colors on windows. (I know we can do it with ansicon. But I don't want.)
-This package is possible to handle escape sequence for ansi color on windows.
+## Authors
 
-## Too Bad!
+* Yasuhiro Matsumoto (a.k.a mattn)
+* Eduard Urbach (minor modifications)
 
-![](https://raw.githubusercontent.com/mattn/go-colorable/gh-pages/bad.png)
+## Style
 
+Please take a look at the [style guidelines](https://github.com/akyoto/quality/blob/master/STYLE.md) if you'd like to make a pull request.
 
-## So Good!
+## Sponsors
 
-![](https://raw.githubusercontent.com/mattn/go-colorable/gh-pages/good.png)
+| [![Cedric Fung](https://avatars3.githubusercontent.com/u/2269238?s=70&v=4)](https://github.com/cedricfung) | [![Scott Rayapoullé](https://avatars3.githubusercontent.com/u/11772084?s=70&v=4)](https://github.com/soulcramer) | [![Eduard Urbach](https://avatars3.githubusercontent.com/u/438936?s=70&v=4)](https://eduardurbach.com) |
+| --- | --- | --- |
+| [Cedric Fung](https://github.com/cedricfung) | [Scott Rayapoullé](https://github.com/soulcramer) | [Eduard Urbach](https://eduardurbach.com) |
 
-## Usage
+Want to see [your own name here?](https://github.com/users/akyoto/sponsorship)
 
-```go
-logrus.SetFormatter(&logrus.TextFormatter{ForceColors: true})
-logrus.SetOutput(colorable.NewColorableStdout())
-
-logrus.Info("succeeded")
-logrus.Warn("not correct")
-logrus.Error("something error")
-logrus.Fatal("panic")
-```
-
-You can compile above code on non-windows OSs.
-
-## Installation
-
-```
-$ go get github.com/mattn/go-colorable
-```
-
-# License
-
-MIT
-
-# Author
-
-Yasuhiro Matsumoto (a.k.a mattn)
+[godoc-image]: https://godoc.org/github.com/akyoto/colorable?status.svg
+[godoc-url]: https://godoc.org/github.com/akyoto/colorable
+[report-image]: https://goreportcard.com/badge/github.com/akyoto/colorable
+[report-url]: https://goreportcard.com/report/github.com/akyoto/colorable
+[tests-image]: https://cloud.drone.io/api/badges/akyoto/colorable/status.svg
+[tests-url]: https://cloud.drone.io/akyoto/colorable
+[coverage-image]: https://codecov.io/gh/akyoto/colorable/graph/badge.svg
+[coverage-url]: https://codecov.io/gh/akyoto/colorable
+[sponsor-image]: https://img.shields.io/badge/github-donate-green.svg
+[sponsor-url]: https://github.com/users/akyoto/sponsorship

@@ -13,7 +13,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/mattn/go-isatty"
+	"github.com/akyoto/tty"
 )
 
 const (
@@ -465,7 +465,7 @@ loop:
 			}
 			w.rest.Reset()
 			continue
-		// https://github.com/mattn/go-colorable/issues/27
+		// https://github.com/akyoto/colorable/issues/27
 		case '7':
 			procGetConsoleScreenBufferInfo.Call(uintptr(handle), uintptr(unsafe.Pointer(&csbi)))
 			w.oldpos = csbi.cursorPosition
