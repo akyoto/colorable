@@ -97,7 +97,7 @@ func NewColorable(file *os.File) io.Writer {
 		panic("nil passed instead of *os.File to NewColorable()")
 	}
 
-	if isatty.IsTerminal(file.Fd()) {
+	if tty.IsTerminal(file.Fd()) {
 		var csbi consoleScreenBufferInfo
 		handle := syscall.Handle(file.Fd())
 		procGetConsoleScreenBufferInfo.Call(uintptr(handle), uintptr(unsafe.Pointer(&csbi)))
