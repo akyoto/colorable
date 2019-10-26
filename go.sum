@@ -1,4 +1,4 @@
-github.com/akyoto/tty v0.1.0 h1:JsqLCfihFhY8TISBOQ6pEEJC0U954EJYMk5wjMEn5es=
-github.com/akyoto/tty v0.1.0/go.mod h1:UMkevvI7yitoMBNoA9ALtJU0AL/6XGNkyuh9DqPvIOs=
-golang.org/x/sys v0.0.0-20190910064555-bbd175535a8b h1:3S2h5FadpNr0zUUCVZjlKIEYF+KaX/OBplTGo89CYHI=
-golang.org/x/sys v0.0.0-20190910064555-bbd175535a8b/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
+github.com/akyoto/tty v0.1.2 h1:kMr1dIAu24R+RlMV0PurdWOg3Ohv8du+5+U4vqxVy2Y=
+github.com/akyoto/tty v0.1.2/go.mod h1:+VlbvviCaiwhS4oGpO+iBtC0lYG1ilIs3ZhUnT1Ppgo=
+golang.org/x/sys v0.0.0-20191025090151-53bf42e6b339 h1:zSqWKgm/o7HAnlAzBQ+aetp9fpuyytsXnKA8eiLHYQM=
+golang.org/x/sys v0.0.0-20191025090151-53bf42e6b339/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
